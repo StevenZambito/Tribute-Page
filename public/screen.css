@@ -7,8 +7,7 @@ html {
 }
 
 body {
-  margin: 0;
-  min-height: 100%;
+  background-color: rgb(235, 235, 235);
 }
 
 #another-rule {
@@ -16,7 +15,10 @@ body {
 }
 
 #main {
-  background-color: rgb(235, 235, 235);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #image {
@@ -25,12 +27,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  border: 1px solid;
+  border: 20px solid;
+  border-color: white;
 }
 
 #img-caption {
   text-align: center;
-  max-width: 700px;
+  max-width: 50%;
+  line-height: 1.5;
+  margin-bottom: 35px;
 }
 
 #img-div {
@@ -40,21 +45,23 @@ body {
 }
 
 #title {
-  font-size: 50px;
+  font-size: 45px;
   font-family: "helvetica";
   text-align: center;
+  margin-bottom: 10px;
 }
 
 #headline, #link-text {
-  font-size: 20px;
+  font-size: 19px;
   text-align: center;
+  margin-bottom: 55px;
 }
 
-.text-center {
-  text-align: center;
+#link-text {
+  margin-top: 45px;
 }
 
-#tribute-info {
+#text-center {
   text-align: center;
 }
 
@@ -62,8 +69,20 @@ body {
   font-weight: 500;
 }
 
-ul {
-  text-align: left;
-  line-height: 1.6;
+#tribute-info {
+  max-width: 50%;
 }
 
+ul {
+  text-align: left;
+  line-height: 1.5;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+#quote  {
+  max-width: 50%;
+  line-height: 1.5;
+}
